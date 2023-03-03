@@ -111,6 +111,124 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\css\boxicon.css" />
+    <Content Include="Content\css\plugins\animate.css" />
+    <Content Include="Content\css\plugins\images\ui-icons_444444_256x240.html" />
+    <Content Include="Content\css\plugins\images\ui-icons_555555_256x240.html" />
+    <Content Include="Content\css\plugins\images\ui-icons_777620_256x240.html" />
+    <Content Include="Content\css\plugins\images\ui-icons_777777_256x240.html" />
+    <Content Include="Content\css\plugins\images\ui-icons_cc0000_256x240.html" />
+    <Content Include="Content\css\plugins\images\ui-icons_ffffff_256x240.html" />
+    <Content Include="Content\css\plugins\jqueryui.min.css" />
+    <Content Include="Content\css\plugins\nice-select.css" />
+    <Content Include="Content\css\plugins\slick.min.css" />
+    <Content Include="Content\css\style.css" />
+    <Content Include="Content\css\vendor\bootstrap.min.css" />
+    <Content Include="Content\css\vendor\font-awesome.min.css" />
+    <Content Include="Content\css\vendor\pe-icon-7-stroke.css" />
+    <Content Include="Content\fonts\fontawesome-webfont3e6e.svg" />
+    <Content Include="Content\fonts\Pe-icon-7-strokebb1d.svg" />
+    <Content Include="Content\img\about\about.jpg" />
+    <Content Include="Content\img\about\avatar.jpg" />
+    <Content Include="Content\img\banner\img-bottom-banner.jpg" />
+    <Content Include="Content\img\banner\img1-middle.jpg" />
+    <Content Include="Content\img\banner\img1-static-menu.jpg" />
+    <Content Include="Content\img\banner\img1-top.jpg" />
+    <Content Include="Content\img\banner\img2-middle.jpg" />
+    <Content Include="Content\img\banner\img2-static-menu.jpg" />
+    <Content Include="Content\img\banner\img2-top.jpg" />
+    <Content Include="Content\img\banner\img3-middle.jpg" />
+    <Content Include="Content\img\banner\img3-top.jpg" />
+    <Content Include="Content\img\banner\img4-middle.jpg" />
+    <Content Include="Content\img\banner\img4-top.jpg" />
+    <Content Include="Content\img\banner\img5-middle.jpg" />
+    <Content Include="Content\img\banner\sidebar-banner.jpg" />
+    <Content Include="Content\img\blog\blog-img1.jpg" />
+    <Content Include="Content\img\blog\blog-img2.jpg" />
+    <Content Include="Content\img\blog\blog-img3.jpg" />
+    <Content Include="Content\img\blog\blog-img4.jpg" />
+    <Content Include="Content\img\blog\blog-img5.jpg" />
+    <Content Include="Content\img\blog\comment-icon.png" />
+    <Content Include="Content\img\brand\1.png" />
+    <Content Include="Content\img\brand\2.png" />
+    <Content Include="Content\img\brand\3.png" />
+    <Content Include="Content\img\brand\4.png" />
+    <Content Include="Content\img\brand\5.png" />
+    <Content Include="Content\img\brand\6.png" />
+    <Content Include="Content\img\cart\cart-1.jpg" />
+    <Content Include="Content\img\cart\cart-2.jpg" />
+    <Content Include="Content\img\favicon.ico" />
+    <Content Include="Content\img\icon\cancel.png" />
+    <Content Include="Content\img\icon\en.png" />
+    <Content Include="Content\img\icon\fr.png" />
+    <Content Include="Content\img\instagram\instagram-1.jpg" />
+    <Content Include="Content\img\instagram\instagram-2.jpg" />
+    <Content Include="Content\img\instagram\instagram-3.jpg" />
+    <Content Include="Content\img\instagram\instagram-4.jpg" />
+    <Content Include="Content\img\instagram\instagram-5.jpg" />
+    <Content Include="Content\img\logo\logo.png" />
+    <Content Include="Content\img\payment.png" />
+    <Content Include="Content\img\paypal-card.jpg" />
+    <Content Include="Content\img\product\deletemodal.gif" />
+    <Content Include="Content\img\product\product-1.jpg" />
+    <Content Include="Content\img\product\product-10.jpg" />
+    <Content Include="Content\img\product\product-11.jpg" />
+    <Content Include="Content\img\product\product-12.jpg" />
+    <Content Include="Content\img\product\product-13.jpg" />
+    <Content Include="Content\img\product\product-14.jpg" />
+    <Content Include="Content\img\product\product-15.jpg" />
+    <Content Include="Content\img\product\product-16.jpg" />
+    <Content Include="Content\img\product\product-17.jpg" />
+    <Content Include="Content\img\product\product-18.jpg" />
+    <Content Include="Content\img\product\product-2.jpg" />
+    <Content Include="Content\img\product\product-3.jpg" />
+    <Content Include="Content\img\product\product-4.jpg" />
+    <Content Include="Content\img\product\product-5.jpg" />
+    <Content Include="Content\img\product\product-6.jpg" />
+    <Content Include="Content\img\product\product-7.jpg" />
+    <Content Include="Content\img\product\product-8.jpg" />
+    <Content Include="Content\img\product\product-9.jpg" />
+    <Content Include="Content\img\product\product-details-img1.jpg" />
+    <Content Include="Content\img\product\product-details-img2.jpg" />
+    <Content Include="Content\img\product\product-details-img3.jpg" />
+    <Content Include="Content\img\product\product-details-img4.jpg" />
+    <Content Include="Content\img\product\product-details-img5.jpg" />
+    <Content Include="Content\img\slider\home1-slide1.jpg" />
+    <Content Include="Content\img\slider\home1-slide2.jpg" />
+    <Content Include="Content\img\slider\home1-slide3.jpg" />
+    <Content Include="Content\img\slider\home2-slide1.jpg" />
+    <Content Include="Content\img\slider\home2-slide2.jpg" />
+    <Content Include="Content\img\slider\home3-slide1.jpg" />
+    <Content Include="Content\img\slider\home3-slide2.jpg" />
+    <Content Include="Content\img\slider\home3-slide3.jpg" />
+    <Content Include="Content\img\slider\home4-slide1.jpg" />
+    <Content Include="Content\img\slider\home4-slide2.jpg" />
+    <Content Include="Content\img\slider\home4-slider1.jpg" />
+    <Content Include="Content\img\slider\home4-slider2.jpg" />
+    <Content Include="Content\img\slider\home4-slider3.jpg" />
+    <Content Include="Content\img\slider\home4-slider4.jpg" />
+    <Content Include="Content\img\slider\home4-slider5.jpg" />
+    <Content Include="Content\img\team\team_member_1.jpg" />
+    <Content Include="Content\img\team\team_member_2.jpg" />
+    <Content Include="Content\img\team\team_member_3.jpg" />
+    <Content Include="Content\img\team\team_member_4.jpg" />
+    <Content Include="Content\img\testimonial\testimonial-1.png" />
+    <Content Include="Content\img\testimonial\testimonial-2.png" />
+    <Content Include="Content\img\testimonial\testimonial-3.png" />
+    <Content Include="Content\img\testimonial\testimonials-bg.jpg" />
+    <Content Include="Content\js\main.js" />
+    <Content Include="Content\js\plugins\ajax-mail.js" />
+    <Content Include="Content\js\plugins\ajaxchimp.js" />
+    <Content Include="Content\js\plugins\countdown.min.js" />
+    <Content Include="Content\js\plugins\google-map.js" />
+    <Content Include="Content\js\plugins\image-zoom.min.js" />
+    <Content Include="Content\js\plugins\imagesloaded.pkgd.min.js" />
+    <Content Include="Content\js\plugins\jqueryui.min.js" />
+    <Content Include="Content\js\plugins\nice-select.min.js" />
+    <Content Include="Content\js\plugins\slick.min.js" />
+    <Content Include="Content\js\vendor\bootstrap.bundle.min.js" />
+    <Content Include="Content\js\vendor\jquery-3.6.0.min.js" />
+    <Content Include="Content\js\vendor\modernizr-3.6.0.min.js" />
     <Content Include="Content\Site.css" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
@@ -124,6 +242,17 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Content\fonts\fontawesome-webfont3e6e.eot" />
+    <Content Include="Content\fonts\fontawesome-webfont3e6e.ttf" />
+    <Content Include="Content\fonts\fontawesome-webfont3e6e.woff" />
+    <Content Include="Content\fonts\fontawesome-webfont3e6e.woff2" />
+    <Content Include="Content\fonts\fontawesome-webfontd41d.eot" />
+    <Content Include="Content\fonts\Pe-icon-7-strokebb1d.eot" />
+    <Content Include="Content\fonts\Pe-icon-7-strokebb1d.ttf" />
+    <Content Include="Content\fonts\Pe-icon-7-strokebb1d.woff" />
+    <Content Include="Content\fonts\Pe-icon-7-stroked41d.eot" />
+    <Content Include="Index.aspx" />
+    <Content Include="MasterPage\WebsiteMaster.Master" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -186,6 +315,20 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Index.aspx.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Index.aspx.designer.cs">
+      <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="MasterPage\WebsiteMaster.Master.cs">
+      <DependentUpon>WebsiteMaster.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="MasterPage\WebsiteMaster.Master.designer.cs">
+      <DependentUpon>WebsiteMaster.Master</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Site.Master.cs">
       <DependentUpon>Site.Master</DependentUpon>
@@ -196,12 +339,14 @@
     </Compile>
     <Compile Include="Site.Mobile.Master.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
     </Compile>
     <Compile Include="ViewSwitcher.ascx.designer.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
