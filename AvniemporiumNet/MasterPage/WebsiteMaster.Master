@@ -21,7 +21,7 @@
     <!-- google fonts -->
     <link href="https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,900" rel="stylesheet" />
     <!-- Bootstrap CSS -->
-    <link href="../Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="../Content/css/vendor/bootstrap.min.css" rel="stylesheet" />
     <!-- Pe-icon-7-stroke CSS -->
     <link href="../Content/css/vendor/pe-icon-7-stroke.css" rel="stylesheet" />
     <!-- Font-awesome CSS -->
@@ -75,7 +75,7 @@
                                 <!-- start logo area -->
                                 <div class="col-lg-2">
                                     <div class="logo">
-                                        <a href="index.html">
+                                        <a href="../Index.aspx">
                                             <img src="../Content/img/logo/logo.png" alt="Brand Logo">
                                         </a>
                                     </div>
@@ -89,29 +89,29 @@
                                             <!-- main menu navbar start -->
                                             <nav class="desktop-menu">
                                                 <ul>
-                                                    <li><a href="index.html">Home</a></li>
-                                                    <li><a href="shop.html">Products</a></li>
+                                                    <li><a href="../Index.aspx">Home</a></li>
+                                                    <li><a href="../Product.aspx">Products</a></li>
 
-                                                    <li class="active"><a href="index.html">For Men's <i
+                                                    <li class="active"><a href="../Product.aspx">For Men's <i
                                                         class="fa fa-angle-down"></i></a>
                                                         <ul class="dropdown">
-                                                            <li><a href="shop.html">Ring</a></li>
-                                                            <li><a href="shop.html">Bracelet</a></li>
-                                                            <li><a href="shop.html">Earrings</a></li>
-                                                            <li><a href="shop.html">Pendants</a></li>
-                                                            <li><a href="shop.html">Wallet</a></li>
+                                                            <li><a href="../Product.aspx">Ring</a></li>
+                                                            <li><a href="../Product.aspx">Bracelet</a></li>
+                                                            <li><a href="../Product.aspx">Earrings</a></li>
+                                                            <li><a href="../Product.aspx">Pendants</a></li>
+                                                            <li><a href="../Product.aspx">Wallet</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li class="active"><a href="index.html">For Women's <i
+                                                    <li class="active"><a href="../Product.aspx">For Women's <i
                                                         class="fa fa-angle-down"></i></a>
                                                         <ul class="dropdown">
-                                                            <li><a href="shop.html">Ring</a></li>
-                                                            <li><a href="shop.html">Bracelet</a></li>
-                                                            <li><a href="shop.html">Earrings</a></li>
-                                                            <li><a href="shop.html">Pendants</a></li>
+                                                            <li><a href="../Product.aspx">Ring</a></li>
+                                                            <li><a href="../Product.aspx">Bracelet</a></li>
+                                                            <li><a href="../Product.aspx">Earrings</a></li>
+                                                            <li><a href="../Product.aspx">Pendants</a></li>
                                                         </ul>
                                                     </li>
-                                                    <li><a href="blog-left-sidebar.html">Blogs</a></li>
+                                                    <li><a href="../Blog.aspx">Blogs</a></li>
                                                     <!-- <li class="position-static"><a href="#">pages <i class="fa fa-angle-down"></i></a>
                                                 <ul class="megamenu dropdown">
                                                     <li class="mega-title"><span>column 01</span>
@@ -159,7 +159,7 @@
                                                 </ul>
                                             </li> -->
 
-                                                    <li><a href="contact-us.html">Contact us</a></li>
+                                                    <li><a href="../ContactUs.aspx">Contact us</a></li>
                                                 </ul>
                                             </nav>
                                             <!-- main menu navbar end -->
@@ -192,7 +192,7 @@
                                                     <ul class="dropdown-list">
                                                         <li><a href="login-register.html">login</a></li>
                                                         <li><a href="login-register.html">register</a></li>
-                                                        <li><a href="my-account.html">my account</a></li>
+                                                        <li><a href="../User/MyAccount.aspx">my account</a></li>
                                                     </ul>
                                                 </li>
                                                 <li>
@@ -229,7 +229,7 @@
                             <div class="col-12">
                                 <div class="mobile-main-header">
                                     <div class="mobile-logo">
-                                        <a href="index.html">
+                                        <a href="../Index.aspx">
                                             <img src="../Content/img/logo/logo.png" alt="Brand Logo">
                                         </a>
                                     </div>
@@ -280,15 +280,15 @@
                                 <!-- mobile menu navigation start -->
                                 <nav>
                                     <ul class="mobile-menu">
-                                        <li><a href="index.html">Home</a></li>
-                                        <li><a href="shop.html">Products</a></li>
-                                        <li class="menu-item-has-children"><a href="index.html">For Men's</a>
+                                        <li><a href="../Index.aspx">Home</a></li>
+                                        <li><a href="../Product.aspx">Products</a></li>
+                                        <li class="menu-item-has-children"><a href="../Product.aspx">For Men's</a>
                                             <ul class="dropdown">
-                                                <li><a href="shop.html">Ring</a></li>
-                                                <li><a href="shop.html">Bracelet</a></li>
-                                                <li><a href="shop.html">Earrings</a></li>
-                                                <li><a href="shop.html">Pendants</a></li>
-                                                <li><a href="shop.html">Wallet</a></li>
+                                                <li><a href="../Product.aspx">Ring</a></li>
+                                                <li><a href="../Product.aspx">Bracelet</a></li>
+                                                <li><a href="../Product.aspx">Earrings</a></li>
+                                                <li><a href="../Product.aspx">Pendants</a></li>
+                                                <li><a href="../Product.aspx">Wallet</a></li>
                                             </ul>
                                         </li>
                                         <!-- <li class="menu-item-has-children"><a href="#">pages</a>
@@ -406,10 +406,14 @@
                 <!-- offcanvas mobile menu end -->
             </header>
             <!-- end Header Area -->
-
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
-
+            <asp:ScriptManager ID="ScriptManager1" runat="server">
+            </asp:ScriptManager>
+            <asp:UpdatePanel ID="updatepanel" runat="server" ChildrenAsTriggers="true" UpdateMode="Conditional">
+                <ContentTemplate>
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </ContentTemplate>
+            </asp:UpdatePanel>
 
             <!-- Scroll to top start -->
             <div class="scroll-top not-visible">
@@ -426,7 +430,7 @@
                                 <div class="widget-item">
                                     <div class="widget-title">
                                         <div class="widget-logo">
-                                            <a href="index.html">
+                                            <a href="../Product.aspx">
                                                 <img src="../Content/img/logo/logo.png" alt="brand logo">
                                             </a>
                                         </div>
@@ -610,7 +614,8 @@
                                                 <h6 class="option-title">qty:</h6>
                                                 <div class="quantity">
                                                     <div class="pro-qty">
-                                                        <input type="text" value="1"></div>
+                                                        <input type="text" value="1">
+                                                    </div>
                                                 </div>
                                                 <div class="action_link">
                                                     <a class="btn btn-cart2" href="#">Add to cart</a>

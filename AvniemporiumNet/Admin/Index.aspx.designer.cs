@@ -7,19 +7,10 @@
 // </auto-generated>
 //------------------------------------------------------------------------------
 
-namespace AvniemporiumNet.MasterPage {
+namespace AvniemporiumNet.Admin {
     
     
-    public partial class WebsiteMaster {
-        
-        /// <summary>
-        /// head control.
-        /// </summary>
-        /// <remarks>
-        /// Auto-generated field.
-        /// To modify move field declaration from designer file to code-behind file.
-        /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder head;
+    public partial class Index {
         
         /// <summary>
         /// form1 control.
@@ -31,30 +22,30 @@ namespace AvniemporiumNet.MasterPage {
         protected global::System.Web.UI.HtmlControls.HtmlForm form1;
         
         /// <summary>
-        /// ScriptManager1 control.
+        /// txtUserId control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.ScriptManager ScriptManager1;
+        protected global::System.Web.UI.WebControls.TextBox txtUserId;
         
         /// <summary>
-        /// updatepanel control.
+        /// txtPassword control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.UpdatePanel updatepanel;
+        protected global::System.Web.UI.WebControls.TextBox txtPassword;
         
         /// <summary>
-        /// ContentPlaceHolder1 control.
+        /// btnLogin control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.ContentPlaceHolder ContentPlaceHolder1;
+        protected global::System.Web.UI.WebControls.Button btnLogin;
     }
 }
