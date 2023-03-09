@@ -106,12 +106,41 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="About.aspx" />
+    <Content Include="Admin\BannerAndTestimonial.aspx" />
     <Content Include="Admin\Dashboard.aspx" />
     <Content Include="Admin\Index.aspx" />
+    <Content Include="Admin\Product.aspx" />
     <Content Include="Blog.aspx" />
     <Content Include="BlogDetails.aspx" />
     <Content Include="Contact.aspx" />
     <Content Include="ContactUs.aspx" />
+    <Content Include="Content\Admin\css\admin.css" />
+    <Content Include="Content\Admin\css\bootstrap.css" />
+    <Content Include="Content\Admin\css\boxicon.css" />
+    <Content Include="Content\Admin\css\datatables.css" />
+    <Content Include="Content\Admin\css\responsiveadmin.css" />
+    <Content Include="Content\Admin\css\summernote.css" />
+    <Content Include="Content\Admin\fonts\OFL.txt" />
+    <Content Include="Content\Admin\images\chrome.png" />
+    <Content Include="Content\Admin\images\click.png" />
+    <Content Include="Content\Admin\images\dashboardimg.png" />
+    <Content Include="Content\Admin\images\dashboardimg1.png" />
+    <Content Include="Content\Admin\images\deletemodal.gif" />
+    <Content Include="Content\Admin\images\email.png" />
+    <Content Include="Content\Admin\images\firefox.png" />
+    <Content Include="Content\Admin\images\login.png" />
+    <Content Include="Content\Admin\images\logo.png" />
+    <Content Include="Content\Admin\images\microsoft.png" />
+    <Content Include="Content\Admin\images\opera.png" />
+    <Content Include="Content\Admin\images\profile.jpg" />
+    <Content Include="Content\Admin\images\safari.png" />
+    <Content Include="Content\Admin\images\subscribe.png" />
+    <Content Include="Content\Admin\js\adminjs.js" />
+    <Content Include="Content\Admin\js\bootstrap.js" />
+    <Content Include="Content\Admin\js\datatables.js" />
+    <Content Include="Content\Admin\js\jquery.js" />
+    <Content Include="Content\Admin\js\poppermin.js" />
+    <Content Include="Content\Admin\js\summernote.js" />
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -235,6 +264,8 @@
     <Content Include="Content\js\vendor\jquery-3.6.0.min.js" />
     <Content Include="Content\js\vendor\modernizr-3.6.0.min.js" />
     <Content Include="Content\Site.css" />
+    <Content Include="Content\toastr.min.css" />
+    <Content Include="Content\toastr.min.js" />
     <Content Include="Default.aspx" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -260,6 +291,11 @@
     <Content Include="MasterPage\WebsiteMaster.Master" />
     <Content Include="MasterPage\UserMaster.master" />
     <Content Include="MasterPage\FirstMaster.Master" />
+    <Content Include="Content\Admin\fonts\Poppins-Bold.ttf" />
+    <Content Include="Content\Admin\fonts\Poppins-ExtraBold.ttf" />
+    <Content Include="Content\Admin\fonts\Poppins-Medium.ttf" />
+    <Content Include="Content\Admin\fonts\Poppins-Regular.ttf" />
+    <Content Include="Content\Admin\fonts\Poppins-Thin.ttf" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Product.aspx" />
     <Content Include="Scripts\bootstrap.js" />
@@ -298,6 +334,13 @@
     <Content Include="Site.Mobile.Master" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Admin\BannerAndTestimonial.aspx.cs">
+      <DependentUpon>BannerAndTestimonial.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\BannerAndTestimonial.aspx.designer.cs">
+      <DependentUpon>BannerAndTestimonial.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Admin\Dashboard.aspx.cs">
       <DependentUpon>Dashboard.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -311,6 +354,13 @@
     </Compile>
     <Compile Include="Admin\Index.aspx.designer.cs">
       <DependentUpon>Index.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Admin\Product.aspx.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Admin\Product.aspx.designer.cs">
+      <DependentUpon>Product.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="About.aspx.cs">

@@ -34,18 +34,19 @@ namespace AvniemporiumNet.Admin
                 DataTable dt = da.ExecuteDataTable("Avn_ManageAdminLogin", _parameter);
                 if (dt != null && dt.Rows.Count > 0)
                 {
-                    string pwd = cm.Decrypt(dt.Rows[0]["Password"].ToString());
-                    if (pwd == txtPassword.Text)
-                    {
+                    //string pwd = cm.Decrypt(dt.Rows[0]["Password"].ToString());
+                    //if (pwd == txtPassword.Text)
+                    //{
                         Session["UserId"] = dt.Rows[0]["id"].ToString();
-                        Response.Redirect("Admin/Dashboard.aspx", true);
+                        Response.Redirect("Dashboard.aspx", true);
                         Response.Redirect("", true);
 
-                    }
-                    else
-                    {
-                        ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "script", "ErrorMessage(`Incorrect Password`);", true);
-                    }
+                    //}
+                   
+                }
+                else
+                {
+                    //ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "script", "ErrorMessage(`Incorrect Password`);", true);
                 }
             }
             catch (Exception ex)

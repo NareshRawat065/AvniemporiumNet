@@ -4,16 +4,282 @@
 
 <html>
 <head runat="server">
-    <title></title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="title" content="Avni Emporium  | Avni Emporium Pvt Ltd">
+    <meta name="description" content="">
+    <meta name="keywords" content=" " />
+    <link rel="shortcut icon" href="../Content/Admin/images/logo.png" type="image/x-icon">
+    <title>Avni Emporium | Admin Login</title>
+    <link rel="stylesheet" type="text/css" href="../Content/Admin/css/summernote.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" type="text/css" href="../Content/Admin/css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="../Content/Admin/css/boxicon.css">
+    <link rel="stylesheet" type="text/css" href="../Content/Admin/css/admin.css">
+    <link rel="stylesheet" type="text/css" href="../Content/Admin/css/responsiveadmin.css">
+    <link rel="stylesheet" href="../Content/Admin/css/datatables.css">
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
 </head>
 <body>
     <form id="form1" runat="server">
-        <div>
-            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-            </asp:ContentPlaceHolder>
+        <div class="main-wrapper">
+            <div class="container-fluid">
+                <div class="row">
+
+                    <!-- Header main start -->
+                    <div class="col-lg-12">
+                        <header class="adminheader">
+                            <div class="adminlogo">
+                                <button onclick="showSidebarMain()" type="button" class="btnsideopen">
+                                    <i
+                                        class='bx bx-menu-alt-right'></i>
+                                </button>
+                                <img src="../Content/img/logo/logo.png" alt="">
+                            </div>
+
+                            <div class="notificationbar">
+                                <ul>
+                                    <li onclick="showntbox(this);"><i class='bx bx-message-square-dots'></i><span
+                                        class="badge messagebadge">3</span>
+                                        <div class="ntbox">
+                                            <h4>5 New Messages
+                                                <button type="button" class="btn-main3">Clear All</button></h4>
+                                            <ul>
+                                                <li>
+                                                    <h5>Aniket Thakur</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <span>2 sec ago</span>
+                                                </li>
+                                                <li>
+                                                    <h5>Ramesh Kushwaha</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <span>yesterday</span>
+                                                </li>
+                                                <li>
+                                                    <h5>Naresh Rawat</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <span>2:45 pm</span>
+                                                </li>
+                                                <li>
+                                                    <h5>Tushar </h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <span>2 sec ago</span>
+                                                </li>
+                                                <li>
+                                                    <h5>Rohit Dhama</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <span>2 sec ago</span>
+                                                </li>
+                                            </ul>
+                                            <div class="ntboxfooter">
+                                                <p>View All</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li onclick="showntbox(this);"><i class='bx bx-bell'></i><span class="badge notificationbadge">9</span>
+                                        <div class="ntbox">
+                                            <h4>7 New Notifications
+                                                <button type="button" class="btn-main3">Clear All</button></h4>
+                                            <ul>
+                                                <li>
+                                                    <h5>Aniket Thakur</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <span>2 sec ago</span>
+                                                </li>
+                                                <li>
+                                                    <h5>Ramesh Kushwaha</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <span>yesterday</span>
+                                                </li>
+                                                <li>
+                                                    <h5>Naresh Rawat</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <span>2:45 pm</span>
+                                                </li>
+                                                <li>
+                                                    <h5>Tushar </h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <span>2 sec ago</span>
+                                                </li>
+                                                <li>
+                                                    <h5>Rohit Dhama</h5>
+                                                    <p>Lorem ipsum dolor sit amet consectetur.</p>
+                                                    <span>2 sec ago</span>
+                                                </li>
+                                            </ul>
+                                            <div class="ntboxfooter">
+                                                <p>View All</p>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="profilelogout" onclick="profileboxshow();">
+                                        <img src="../Content/Admin/images/profile.jpg"
+                                            alt="">
+                                        <div class="profilelogoutbox">
+                                            <div class="profiledetail">
+                                                <img src="../Content/Admin/images/profile.jpg" alt="">
+                                                <p>
+                                                    Atul Kumar
+                        <label for="">Admin</label>
+                                                </p>
+                                            </div>
+
+                                            <ul>
+                                                <li><a href="profile.html"><i class='bx bx-user'></i>Profile</a></li>
+                                                <li><a href=""><i class='bx bxs-inbox'></i>Inbox</a></li>
+                                                <li><a href="index.html"><i class='bx bx-log-out'></i>Log Out</a></li>
+                                            </ul>
+                                        </div>
+                                        <p>
+                                            Atul Kumar
+                    <label for="">Admin</label>
+                                        </p>
+                                    </li>
+                                </ul>
+                            </div>
+                        </header>
+                    </div>
+                    <!-- Header main end -->
+
+
+                    <div class="sidebarMain">
+                        <ul>
+                            <li><a href="Dashboard.aspx" onclick="sidebarActive(this);" class="sidebarnav activeSide"><i
+                                class='bx bxs-dashboard'></i>Dashboard</a></li>
+                            <li><a href="BannerAndTestimonial.aspx" onclick="sidebarActive(this);" class="sidebarnav"><i
+                                class='bx bxs-info-circle'></i>
+                                Banners & Offers</a></li>
+                            <li><a href="Product.aspx" onclick="sidebarActive(this);" class="sidebarnav"><i
+                                class='bx bx-laptop'></i>Products</a>
+                            </li>
+                            <li><a href="productdetail.html" onclick="sidebarActive(this);" class="sidebarnav"><i
+                                class='bx bx-laptop'></i>Product Details</a>
+                            </li>
+                            <li><a href="refrequest.html" onclick="sidebarActive(this);" class="sidebarnav"><i
+                                class='bx bx-laptop'></i>Refund & Replacement </a>
+                            </li>
+                            <li><a href="manageuser.html" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bx-stats'></i>Manage User</a></li>
+                            <!-- <li><a href="#" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bxs-add-to-queue'></i>
+                      Service Page</a></li> -->
+                            <!-- <li><a href="#" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bxs-user-voice'></i>
+                    Profile</a></li> -->
+                            <li><a href="inquiry.html" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bxl-gmail'></i>Inquiry</a>
+                            </li>
+
+                            <!-- <li><a href="#" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bxs-user'></i> Our
+                Clients</a></li> -->
+                            <li><a href="adminblogs.html" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bxl-blogger'></i>Our
+                Blogs</a></li>
+                            <li><a href="stats.html" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bx-stats'></i>Stats</a></li>
+
+                        </ul>
+                    </div>
+
+                    <div class="rightSideMain">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                </div>
+            </div>
         </div>
     </form>
 </body>
+
+
+<script src="../Content/Admin/js/bootstrap.js"></script>
+<script src="../Content/Admin/js/jquery.js"></script>
+<script src="../Content/Admin/js/poppermin.js"></script>
+<script src="../Content/Admin/js/summernote.js"></script>
+<%--<script src="https://cdn.amcharts.com/lib/5/index.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/xy.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/radar.js"></script>
+<script src="https://cdn.amcharts.com/lib/5/percent.js"></script>--%>
+<link href="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.css" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
+<script src="../Content/Admin/js/summernote.js"></script>
+<script src="../Content/Admin/js/datatables.js"></script>
+    <script src="../Content/Admin/js/adminjs.js"></script>
+<%--<script>
+    am5.ready(function () {
+
+        // Create root element
+        // https://www.amcharts.com/docs/v5/getting-started/#Root_element
+        var root = am5.Root.new("websiteperformancemeter");
+
+        // Set themes
+        // https://www.amcharts.com/docs/v5/concepts/themes/
+        root.setThemes([
+            am5themes_Animated.new(root)
+        ]);
+
+        // Create chart
+        // https://www.amcharts.com/docs/v5/charts/radar-chart/
+        var chart = root.container.children.push(
+            am5radar.RadarChart.new(root, {
+                panX: false,
+                panY: false,
+                startAngle: 180,
+                endAngle: 360
+            })
+        );
+
+        // Create axis and its renderer
+        // https://www.amcharts.com/docs/v5/charts/radar-chart/gauge-charts/#Axes
+        var axisRenderer = am5radar.AxisRendererCircular.new(root, {
+            innerRadius: -10,
+            strokeOpacity: 1,
+            strokeWidth: 15,
+            strokeGradient: am5.LinearGradient.new(root, {
+                rotation: 0,
+                stops: [
+                    { color: am5.color(0x19d228) },
+                    { color: am5.color(0xf4fb16) },
+                    { color: am5.color(0xf6d32b) },
+                    { color: am5.color(0xfb7116) }
+                ]
+            })
+        });
+
+        var xAxis = chart.xAxes.push(
+            am5xy.ValueAxis.new(root, {
+                maxDeviation: 0,
+                min: 0,
+                max: 100,
+                strictMinMax: true,
+                renderer: axisRenderer
+            })
+        );
+
+        // Add clock hand
+        // https://www.amcharts.com/docs/v5/charts/radar-chart/gauge-charts/#Clock_hands
+        var axisDataItem = xAxis.makeDataItem({});
+        axisDataItem.set("value", 0);
+
+        var bullet = axisDataItem.set("bullet", am5xy.AxisBullet.new(root, {
+            sprite: am5radar.ClockHand.new(root, {
+                radius: am5.percent(99)
+            })
+        }));
+
+        xAxis.createAxisRange(axisDataItem);
+
+        axisDataItem.get("grid").set("visible", false);
+
+        setInterval(() => {
+            axisDataItem.animate({
+                key: "value",
+                to: Math.round(Math.random() * 100),
+                duration: 800,
+                easing: am5.ease.out(am5.ease.cubic)
+            });
+        }, 2000);
+
+        // Make stuff animate on load
+        chart.appear(1000, 100);
+
+    }); // end am5.ready()
+</script>--%>
 </html>
