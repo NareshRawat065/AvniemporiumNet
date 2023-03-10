@@ -288,6 +288,8 @@
     <Content Include="Content\fonts\Pe-icon-7-strokebb1d.woff" />
     <Content Include="Content\fonts\Pe-icon-7-stroked41d.eot" />
     <Content Include="Index.aspx" />
+    <Content Include="Js\fileupload.js" />
+    <Content Include="Js\Validate.js" />
     <Content Include="MasterPage\WebsiteMaster.Master" />
     <Content Include="MasterPage\UserMaster.master" />
     <Content Include="MasterPage\FirstMaster.Master" />
@@ -371,6 +373,9 @@
       <DependentUpon>About.aspx</DependentUpon>
     </Compile>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="BaseClass.cs">
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
     <Compile Include="Blog.aspx.cs">
       <DependentUpon>Blog.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -461,6 +466,9 @@
     <Compile Include="Site.Mobile.Master.designer.cs">
       <DependentUpon>Site.Mobile.Master</DependentUpon>
     </Compile>
+    <Compile Include="Upload.ashx.cs">
+      <DependentUpon>Upload.ashx</DependentUpon>
+    </Compile>
     <Compile Include="User\MyAccount.aspx.cs">
       <DependentUpon>MyAccount.aspx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -468,6 +476,7 @@
     <Compile Include="User\MyAccount.aspx.designer.cs">
       <DependentUpon>MyAccount.aspx</DependentUpon>
     </Compile>
+    <Compile Include="ValueController.cs" />
     <Compile Include="ViewSwitcher.ascx.cs">
       <DependentUpon>ViewSwitcher.ascx</DependentUpon>
       <SubType>ASPXCodeBehind</SubType>
@@ -483,6 +492,7 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+    <Content Include="Upload.ashx" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

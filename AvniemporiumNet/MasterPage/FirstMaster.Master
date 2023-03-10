@@ -19,8 +19,14 @@
     <link rel="stylesheet" type="text/css" href="../Content/Admin/css/admin.css">
     <link rel="stylesheet" type="text/css" href="../Content/Admin/css/responsiveadmin.css">
     <link rel="stylesheet" href="../Content/Admin/css/datatables.css">
+    <link href="../Content/toastr.min.css" rel="stylesheet" />
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
+    <style>
+        .help-block {
+            color: red;
+        }
+    </style>
 </head>
 <body>
     <form id="form1" runat="server">
@@ -121,20 +127,21 @@
                                             <div class="profiledetail">
                                                 <img src="../Content/Admin/images/profile.jpg" alt="">
                                                 <p>
-                                                    Atul Kumar
-                        <label for="">Admin</label>
+                                                    <asp:Label ID="lblUsername" runat="server"></asp:Label>
+                                                    <label for="">Admin</label>
                                                 </p>
                                             </div>
 
                                             <ul>
                                                 <li><a href="profile.html"><i class='bx bx-user'></i>Profile</a></li>
                                                 <li><a href=""><i class='bx bxs-inbox'></i>Inbox</a></li>
-                                                <li><a href="index.html"><i class='bx bx-log-out'></i>Log Out</a></li>
+                                                <li>
+                                                    <asp:LinkButton class="bx bx-log-out" runat="server" ID="lnkbtnSignOutclick" OnClick="lnkbtnSignOut_click">Log Out</asp:LinkButton></li>
                                             </ul>
                                         </div>
                                         <p>
-                                            Atul Kumar
-                    <label for="">Admin</label>
+                                            <asp:Label ID="lblddlName" runat="server"></asp:Label>
+                                            <label for="">Admin</label>
                                         </p>
                                     </li>
                                 </ul>
@@ -178,8 +185,14 @@
                     </div>
 
                     <div class="rightSideMain">
-                        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
-                        </asp:ContentPlaceHolder>
+                        <asp:ScriptManager ID="ScriptManager1" runat="server">
+                        </asp:ScriptManager>
+                        <asp:UpdatePanel ID="updatepanel" runat="server" ChildrenAsTriggers="true" UpdateMode="Conditional">
+                            <ContentTemplate>
+                                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                                </asp:ContentPlaceHolder>
+                            </ContentTemplate>
+                        </asp:UpdatePanel>
                     </div>
                 </div>
             </div>
@@ -201,7 +214,36 @@
 <script src="https://cdn.jsdelivr.net/npm/summernote@0.8.18/dist/summernote-bs4.min.js"></script>
 <script src="../Content/Admin/js/summernote.js"></script>
 <script src="../Content/Admin/js/datatables.js"></script>
-    <script src="../Content/Admin/js/adminjs.js"></script>
+<script src="../Content/Admin/js/adminjs.js"></script>
+<script src="../Js/fileupload.js"></script>
+<script src="../Js/Validate.js"></script>
+<script src="../Content/toastr.min.js"></script>
+<script type="text/javascript">
+    function SuccessMessage(msg) {
+        toastr["success"](msg);
+    }
+    function ErrorMessage(msg) {
+        toastr["error"](msg);
+    }
+    toastr.options = {
+        "closeButton": false,
+        "debug": false,
+        "newestOnTop": false,
+        "progressBar": true,
+        "positionClass": "toast-top-right",
+        "preventDuplicates": false,
+        "onclick": null,
+        "showDuration": "300",
+        "hideDuration": "1000",
+        "timeOut": "5000",
+        "extendedTimeOut": "1000",
+        "showEasing": "swing",
+        "hideEasing": "linear",
+        "showMethod": "fadeIn",
+        "hideMethod": "fadeOut"
+    }
+</script>
+
 <%--<script>
     am5.ready(function () {
 
