@@ -23,7 +23,7 @@
     <asp:ContentPlaceHolder ID="head" runat="server">
     </asp:ContentPlaceHolder>
     <style>
-        .help-block {
+        .help-block, .spnMandatory {
             color: red;
         }
     </style>
@@ -168,15 +168,8 @@
                                 class='bx bx-laptop'></i>Refund & Replacement </a>
                             </li>
                             <li><a href="manageuser.html" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bx-stats'></i>Manage User</a></li>
-                            <!-- <li><a href="#" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bxs-add-to-queue'></i>
-                      Service Page</a></li> -->
-                            <!-- <li><a href="#" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bxs-user-voice'></i>
-                    Profile</a></li> -->
                             <li><a href="inquiry.html" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bxl-gmail'></i>Inquiry</a>
                             </li>
-
-                            <!-- <li><a href="#" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bxs-user'></i> Our
-                Clients</a></li> -->
                             <li><a href="adminblogs.html" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bxl-blogger'></i>Our
                 Blogs</a></li>
                             <li><a href="stats.html" onclick="sidebarActive(this);" class="sidebarnav"><i class='bx bx-stats'></i>Stats</a></li>

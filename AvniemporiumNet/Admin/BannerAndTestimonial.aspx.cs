@@ -44,6 +44,11 @@ namespace AvniemporiumNet.Admin
                     RepBannerDetails.DataSource = dt;
                     RepBannerDetails.DataBind();
                 }
+                else
+                {
+                    RepBannerDetails.DataSource = dt;
+                    RepBannerDetails.DataBind();
+                }
             }
             catch (Exception ex)
             {
@@ -173,7 +178,7 @@ namespace AvniemporiumNet.Admin
                             //RunJavaScriptFunction("fn_AddBannerHide();");
                             //RunJavaScriptFunction("SuccessMessage(`Update successfully`); ");                            
                             ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "script", "SuccessMessage(`Update successfully`);fn_AddBannerHide(); ", true);
-                           // ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "script", "", true);
+                            // ScriptManager.RegisterStartupScript(this.Page, this.GetType(), "script", "", true);
                         }
                         else
                         {
@@ -241,6 +246,11 @@ namespace AvniemporiumNet.Admin
                             dr["Attachment"] = Convert.ToString(dr["Attachment"]).Replace("~/", "../");
                         }
                     }
+                    RepTestimonialDetails.DataSource = dt;
+                    RepTestimonialDetails.DataBind();
+                }
+                else
+                {
                     RepTestimonialDetails.DataSource = dt;
                     RepTestimonialDetails.DataBind();
                 }
@@ -328,7 +338,7 @@ namespace AvniemporiumNet.Admin
                 }
                 else
                 {
-                    Attachment = hdnfilePathBanner.Value;
+                    Attachment = hdnfilePathTestimonial.Value;
                 }
 
                 string Action = "InsertTestimonial"; int id = 0;
@@ -342,9 +352,9 @@ namespace AvniemporiumNet.Admin
                                     new SqlParameter("@Action",Action),
                                     new SqlParameter("@UserId",Convert.ToInt32(Session["UserId"])),
                                     new SqlParameter("@Id", id),
-                                    new SqlParameter("@Title", txtBannerTitle.Text),
+                                    new SqlParameter("@Title", txtTestimonialTitle.Text),
                                     new SqlParameter("@UserName",txtUserName.Text),
-                                    new SqlParameter("@Description", txtBanerDescription.InnerText),
+                                    new SqlParameter("@Description", txtTesimonialDescription.InnerText),
                                     new SqlParameter("@Attachment", Attachment),
                                     new SqlParameter("@Rating", txtRating.Text),
                                    };

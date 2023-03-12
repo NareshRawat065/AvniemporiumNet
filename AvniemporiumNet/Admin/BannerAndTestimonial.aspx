@@ -3,19 +3,23 @@
 <asp:Content ID="Content1" ContentPlaceHolderID="head" runat="server">
     <script type="text/javascript">
         function fn_AddBanner() {
+             $('.modal-backdrop').hide();
             $('#addbannermodal').modal('show');
             return false;
         }
         function fn_AddBannerHide() {
             $('#addbannermodal').modal('hide');
+            $('.modal-backdrop').hide();
             //return false;
         }
         function fn_AddTestimonial() {
+             $('.modal-backdrop').hide();
             $('#addtestimonialmodal').modal('show');
             return false;
         }
         function fn_AddTestimonialHide() {
             $('#addtestimonialmodal').modal('hide');
+            $('.modal-backdrop').hide();
             //return false;
         }
     </script>
@@ -198,7 +202,7 @@
                 <div class="modal-footer">
                     <asp:HiddenField ID="hdnBannerId" runat="server" />
                     <asp:Button ID="btnSubmit" runat="server" CssClass="btn btn-success" Text="Submit" OnClick="btn_Submit" OnClientClick="return Validate()" />
-                    <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-danger" Text="Cancel" OnClick="btn_Cancel" />
+                    <asp:Button ID="btnCancel" runat="server" CssClass="btn btn-danger" data-bs-dismiss="modal" Text="Cancel" OnClick="btn_Cancel" />
                 </div>
 
             </div>
@@ -241,7 +245,7 @@
                         </div> <div class="col-lg-4">
                             <div class="form-group">
                                 <label for="">Rating</label>
-                                <asp:TextBox ID="txtRating" runat="server" CssClass="form-control" placeholder="Add Rating"></asp:TextBox>
+                                <asp:TextBox ID="txtRating" runat="server" CssClass="form-control" onkeypress="OnlyNumber(event);" placeholder="Add Rating"></asp:TextBox>
                             </div>
                         </div>
                         <div class="col-lg-8">
@@ -256,7 +260,7 @@
                 <div class="modal-footer">
                     <asp:HiddenField ID="hdnTesimonialId" runat="server" />
                     <asp:Button ID="btnSubmitTesimonial" runat="server" CssClass="btn btn-success" Text="Submit" OnClick="btnTesimonial_Submit" OnClientClick="return ValidateTesimonial()" />
-                    <asp:Button ID="btnCancelTesimonial" runat="server" CssClass="btn btn-danger" Text="Cancel" OnClick="btn_Cancel" />
+                    <asp:Button ID="btnCancelTesimonial" runat="server" CssClass="btn btn-danger" data-bs-dismiss="modal" Text="Cancel" OnClick="btn_Cancel" />
                 </div>
             </div>
         </div>
